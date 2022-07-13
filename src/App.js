@@ -71,7 +71,7 @@ const App = () => {
           width: "100%",
           height: "100%",
           playerVars: {
-            autoplay: true,
+            autoplay: 1,
             controls: 0,
           },
         }}
@@ -82,7 +82,7 @@ const App = () => {
   return (
     <div>
       <header className="max-center">
-        <h1>Movie Trailer App</h1>
+        <h1 className="logo">Movie Trailer</h1>
         <form onSubmit={search}>
           <input
             className="search-box"
@@ -127,19 +127,18 @@ const App = () => {
           <span className="play"></span>
             Play Trailer
           </button>
-          <h1>{selectedMovie.title}</h1>
-          {selectedMovie.overview ? <p>{selectedMovie.overview}</p> : null}
+          <h1 className="movie-title">{selectedMovie.title}</h1>
+          {selectedMovie.overview ? <p className="movie-desc">{selectedMovie.overview}</p> : null}
         </div>
       </div>
       <div className="container max-center">{renderMovies()}</div>
 
       <footer className="max-center">
-      <span class="ml-3 text-xl">Dhruv Mishra</span>
-      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
-          © 2022 https://github.com/dhruv35m —
+      <span className="name">Dhruv Mishra</span>
+      <p className="copyright">
+          © 2022 —
           <a
           href="https://github.com/dhruv35m"
-          class="text-gray-600 ml-1"
           rel="noopener noreferrer"
           target="_blank"
           >
