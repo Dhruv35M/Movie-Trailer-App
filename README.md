@@ -6,7 +6,11 @@ check it out: https://dhruv35m.github.io/Movie-Trailer-App/
 <br>
 
 <img src="src/img/1.png" alt="screenshot" />
+<br>
 <img src="src/img/2.png" alt="screenshot" />
+<br>
 <img src="src/img/3.png" alt="screenshot" />
+<br>
 <img src="src/img/4.png" alt="screenshot" />
+<br>
 <img src="src/img/5.png" alt="screenshot" />
